@@ -1,0 +1,16 @@
+Scanner scanner = new Scanner(System.in);
+	double salárioBruto,salárioLiquido,imposto, inss, sindicato, resultado;
+
+        System.out.println("informe seu salário bruto");
+        salárioBruto = scanner.nextDouble();
+
+        if(salárioBruto > 0){
+            imposto = 0.11 * salárioBruto;
+            inss = 0.08 * salárioBruto;
+            sindicato = 0.05 * salárioBruto;
+            resultado = salárioBruto - (imposto + inss + sindicato);
+            salárioLiquido = resultado;
+
+            System.out.println("seu salário liquido é de " + salárioLiquido);
+        }
+
